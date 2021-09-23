@@ -1,0 +1,58 @@
+body {
+  font-family: "Muli", sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  height: 50vh;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 30px 10px 30px 10px;
+  position: relative;
+  transition: flex 0.7s ease-in; /* för att saktar ner den expanderande processen och ease-in: hur expandering ser ut*/
+}
+
+.panel.active { /* aktiv panelen */
+  flex: 5;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.content p {
+  font-size: 12px;
+  font-family: "Times New Roman";
+}
+
+.content small {
+  color: #555;
+  font-style: italic;
+}
+
+.content p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.content img {
+  max-width: 100%;
+}
